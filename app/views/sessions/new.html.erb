@@ -1,17 +1,17 @@
 <% form_tag sessions_path do -%>
 
   <fieldset class="fieldset">
-    <legend>Webistrano login</legend>
+    <legend>请登陆</legend>
     <div style="float: right; padding: 20px;">
-      <%= image_tag('peritor_theme/webistrano_logo_large.png', :border => '0', :width => '400', :height => '130')%>
+      <%= image_tag('peritor_theme/github.jpg', :border => '0', :width => '300', :height => '300')%>
     </div>
     <div>
-      <p><label for="login">Login</label><br/>
+      <p><label for="login">用户名</label><br/>
       <%= text_field_tag 'login' %></p>
-      <p><label for="password">Password</label><br/>
+      <p><label for="password">密码</label><br/>
       <%= password_field_tag 'password' %></p>
       <p><%= check_box_tag 'remember_me', '1', {}, :class => 'noframe' %>
-      <label for="remember_me">Remember me</label></p>
+      <label for="remember_me">保存登陆信息</label></p>
       <p>
       <%= submit_tag 'Log in' %>
       </p>
@@ -21,5 +21,5 @@
 
 <% content_for(:page_title) do %>
   <% @page_title = "Login" %>
-  <h2 style="color: #A40008; ">Welcome to Webistrano</h2>
+  <h2 style="color: #A40008; ">欢迎来到代码发布平台</h2>
 <% end %>
