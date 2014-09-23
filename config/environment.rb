@@ -25,7 +25,7 @@ Rails::Initializer.run do |config|
   }
 
   # Make Active Record use UTC-base instead of local time
-  config.time_zone = 'UTC'
+  config.time_zone = 'Beijing'
   
   config.gem 'net-ssh', :version => '2.0.15', :lib => 'net/ssh'
   config.gem 'net-scp', :version => '1.0.2', :lib => 'net/scp'
@@ -45,5 +45,6 @@ require 'syntax/convertors/html'
 File.delete("#{RAILS_ROOT}/public/stylesheets/application.css") if File.exists?("#{RAILS_ROOT}/public/stylesheets/application.css")
 
 # set default time_zone to UTC
-ENV['TZ'] = 'UTC'
-Time.zone = 'UTC'
+#ENV['TZ'] = 'UTC'
+ENV['TZ'] = 'Beijing'
+Time.zone = 'Beijing'
