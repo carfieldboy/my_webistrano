@@ -46,5 +46,5 @@ File.delete("#{RAILS_ROOT}/public/stylesheets/application.css") if File.exists?(
 
 # set default time_zone to UTC
 #ENV['TZ'] = 'UTC'
-ENV['TZ'] = 'Beijing'
+####ENV['TZ'] = 'Beijing'
 Time.zone = 'Beijing'
